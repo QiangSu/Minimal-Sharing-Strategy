@@ -1,7 +1,8 @@
 # Minimal-Sharing-Strategy
 Transcript-Specific Minimal-Shared Regions Refining Transcriptome Profiles in RNA-Seq
-## 1.1 
-```python exon_kmer_frequency_distribution.py```
+## 1.1 ```python
+python exon_kmer_frequency_distribution.py
+```
 Exon k-mer Overlapping Frequency Analysis: The ```exon_kmer_frequency_distribution.py``` script performs a comprehensive analysis of k-mer occurrences at the exon level within genomic data. This Python tool extracts exon sequences, examines overlapping k-mer substrings, and outputs the results in CSV format, streamlining k-mer-based studies on exon structure. Initially, it parses a GTF file to gather details about each exon’s location, strand orientation, and identifiers—crucial elements for accurately pinpointing sequences in the genome. For exons located on the reverse strand, it calculates the reverse complement to maintain strand specificity. Leveraging a FASTA genome file, the script retrieves the exact nucleotide sequence for each exon, then divides it into overlapping k-mer segments. It computes both local k-mer frequencies (unique to each exon) and global frequencies (across all exons) and saves this data in CSV files, each documenting k-mer sequences, their frequencies, and associated transcripts for each exon. This systematic approach supports in-depth analyses of exon structures in genomic studies. 
 kmer_frequency_overlapping_exons.py
 The Python script ```kmer_frequency_overlapping_exons.py``` processes a set of CSV files containing exon and gene information, calculating and updating specific frequency values for each entry. It iterates through CSV files in a specified input directory, extracts exon and gene details, and performs calculations to determine the frequency differences between global and local occurrences. It also counts unique gene occurrences based on the data within each file.
