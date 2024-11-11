@@ -1,17 +1,17 @@
 #!/bin/bash
 
 # Define the path to the sample list file
-sample_list="/home/data/qs/Ndufs4_data/N2002873_ZJX_80-451570558/combined/trimmed_data/Ndufs4_sample_list.txt"
+sample_list="/home/data/trimmed_data/sample_list.txt"
 
 # Define the paths to the scripts and directories
-kmer_count_script="/home/data/qs/mus_str.sn/HGC20231021002-0003-2/kmer_count_v2_20240803.py"
-merge_script="/home/data/qs/colorec_data/merge_normalizing_count_TPM.py"
-gaussf_script="/home/data/qs/colorec_data/GaussF_TPM.py"
-reference_dir="/home/data/qs/data/reference_isoform/mus_ref/50mer_Mus_musculus_GRCc39_isoform_mini_shared_filter"
-input_fastq_dir="/home/data/qs/Ndufs4_data/N2002873_ZJX_80-451570558/combined/trimmed_data"
-output_dir="/home/data/qs/Ndufs4_data/N2002873_ZJX_80-451570558/combined/trimmed_data/1P_kmer_count"
-merged_output_dir="/home/data/qs/Ndufs4_data/N2002873_ZJX_80-451570558/combined/trimmed_data/1P_kmer_count_merg"
-result_output_dir="/home/data/qs/Ndufs4_data/N2002873_ZJX_80-451570558/combined/trimmed_data/1P_kmer_count_merg_result"
+kmer_count_script="/home/data/kmer_count_v2_20240803.py"
+merge_script="/home/data/colorec_data/merge_normalizing_count_TPM.py"
+gaussf_script="/home/data/colorec_data/GaussF_TPM.py"
+reference_dir="/home/data/reference_isoform/mus_ref/50mer_Mus_musculus_GRCc39_isoform_mini_shared_filter"
+input_fastq_dir="/home/data/trimmed_data"
+output_dir="/home/data/trimmed_data/1P_kmer_count"
+merged_output_dir="/home/data/trimmed_data/1P_kmer_count_merg"
+result_output_dir="/home/data/trimmed_data/1P_kmer_count_merg_result"
 
 # Ensure output directories exist
 mkdir -p "$output_dir"ll
